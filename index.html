@@ -50,18 +50,30 @@
     </script>
     <script type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
     <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    
-    <!-- Core JS-->
-    <script type="text/javascript" src="static/js/scripts.js"></script>
-    <script type="text/javascript" src="static/js/js-yaml.min.js"></script>
 
+    <!-- 修复导航栏样式，避免按钮重叠 -->
+    <style>
+        .navbar-nav .nav-item {
+            margin: 0 5px; /* 给导航按钮加间距，避免重叠 */
+        }
+        .navbar-nav .nav-link {
+            white-space: nowrap; /* 防止文字换行 */
+            padding: 8px 12px; /* 调整内边距，按钮更舒展 */
+        }
+        @media (max-width: 768px) {
+            .navbar-nav .nav-item {
+                margin: 5px 0; /* 移动端垂直排列，增加上下间距 */
+            }
+        }
+    </style>
+    
 </head>
 
 <body id="page-top">
     <!-- Navigation-->
     <nav class="header navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
         <div class="container px-5">
-            <a id="page-top-title" class="navbar-brand fw-bold" href="#page-top">小梨 (LittlePear)</a>
+            <a id="page-top-title" class="navbar-brand fw-bold" href="#home">小梨 (LittlePear)</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 MENU
@@ -69,14 +81,15 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                    <!-- 拆分导航按钮，避免重叠 -->
                     <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#page-top">首页</a>
+                        <a class="nav-link me-lg-3" href="#home">首页</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#publications">项目经历</a>
+                        <a class="nav-link me-lg-3" href="#project">项目经历</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#awards">获奖经历</a>
+                        <a class="nav-link me-lg-3" href="#work">工作经历</a>
                     </li>
                 </ul>
             </div>
@@ -101,7 +114,7 @@
     </div>
     <!-- Photo -->
     
-    <!-- Home -->
+    <!-- Home（首页，对应 home.md） -->
     <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="home">
         <div class="container px-5">
             <header>
@@ -112,27 +125,27 @@
     </section>
     <!-- Home -->
 
-    <!-- Publications -->
-    <section class="bg-gradient-primary-to-secondary-gray mt5 md5" id="publications">
+    <!-- Project（项目经历，对应 Project.md） -->
+    <section class="bg-gradient-primary-to-secondary-gray mt5 md5" id="project">
         <div class="container px-5">
             <header>
-                <h2 id="publications-subtitle"><i class="bi bi-file-text-fill"></i>&nbsp;项目经历</h2>
+                <h2 id="project-subtitle"><i class="bi bi-file-text-fill"></i>&nbsp;项目经历</h2>
             </header>
-            <div class="main-body" id="publications-md"></div>
+            <div class="main-body" id="project-md"></div>
         </div>
     </section>
-    <!-- Publications  -->
+    <!-- Project -->
 
-    <!-- Awards -->
-    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="awards">
+    <!-- Work（工作经历，对应 Work.md） -->
+    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="work">
         <div class="container px-5">
             <header>
-                <h2 id="awards-subtitle"><i class="bi bi-award-fill"></i>&nbsp;获奖经历</h2>
+                <h2 id="work-subtitle"><i class="bi bi-award-fill"></i>&nbsp;工作经历</h2>
             </header>
-            <div class="main-body" id="awards-md"></div>
+            <div class="main-body" id="work-md"></div>
         </div>
     </section>
-    <!-- Awards -->
+    <!-- Work -->
 
     <!-- Footer-->
     <footer class="bg-bottom text-center py-5">
@@ -145,6 +158,42 @@
             </div>
         </div>
     </footer>
+
+    <!-- 加载 Markdown 文件的核心 JS -->
+    <script>
+        // 加载 home.md 到首页
+        fetch('contents/home.md')
+            .then(response => {
+                if (!response.ok) throw new Error('home.md 文件不存在');
+                return response.text();
+            })
+            .then(text => {
+                document.getElementById('home-md').innerHTML = marked.parse(text);
+            })
+            .catch(err => console.log('加载 home.md 失败：', err));
+
+        // 加载 Project.md 到项目经历板块
+        fetch('contents/Project.md')
+            .then(response => {
+                if (!response.ok) throw new Error('Project.md 文件不存在');
+                return response.text();
+            })
+            .then(text => {
+                document.getElementById('project-md').innerHTML = marked.parse(text);
+            })
+            .catch(err => console.log('加载 Project.md 失败：', err));
+
+        // 加载 Work.md 到工作经历板块
+        fetch('contents/Work.md')
+            .then(response => {
+                if (!response.ok) throw new Error('Work.md 文件不存在');
+                return response.text();
+            })
+            .then(text => {
+                document.getElementById('work-md').innerHTML = marked.parse(text);
+            })
+            .catch(err => console.log('加载 Work.md 失败：', err));
+    </script>
 
 </body>
 </html>
