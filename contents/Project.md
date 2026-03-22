@@ -1,5 +1,3 @@
-#### Long-term Project
-
 #### Photon Game Jam | Game Designer / Prompt Engineer
 
 **Dec 2025 – May 2026**
@@ -72,6 +70,8 @@
 2025Ciga GameJam 策划 2025.6
 
 2025Taptap聚光灯GameJam 上海站 策划 2025.6 [[demo video]]( https://www.bilibili.com/video/BV1o9UNBhEjU/?share_source=copy_web&vd_source=34a280ece54030283974414564b24c01)
+
+
 
 
 

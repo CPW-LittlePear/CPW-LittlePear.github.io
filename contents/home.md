@@ -2,6 +2,8 @@
 
 #### Contact|联系方式
 
+Name：曹培文
+
 Email: xiaoningmeng1934[at]qq.com
 
 Wechat: xiaoningmeng1934
@@ -19,11 +21,13 @@ National College Entrance Examination: 649/750, ranked 298th in Anhui Province
 
 RPG / FPS / TPS：System Planner（系统策划）, Copy Planner（文案策划）
 
+[[文案策划作品集]](https://docs.qq.com/s/oAzjAh_VlTuKuINo98GkVW)
+
 
 
 #### Skill|相关技能
 
-Programming Basics：Proficient in Unreal Engine (level design & blueprint plugins) and Unity; skilled in Python and C# programming languages.
+Programming Basics：Proficient in UE and Unity; skilled in Python and C# programming languages.
 
 编程基础：熟悉UE（地编和蓝图插件）、Unity，掌握python和C#编程语言
 
