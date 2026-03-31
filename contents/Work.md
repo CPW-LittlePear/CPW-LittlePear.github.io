@@ -1,18 +1,3 @@
-### NetEase (Shanghai) Network Co., Ltd. | Copywriting Intern (Otome RPG:*Time and Space Painter*)
-
-**Oct 2025 - Feb 2026**
-
-- **Story Design**: Designed game plot outlines and wrote copy independently, delivering 6k-8k words per week in formats including card stories, private chats, SMS messages, and in-game emails.
-- **Art Coordination**: Collaborated with the art team to define character and scene art requirements, and optimized plot direction and details based on feedback to ensure consistency between narrative content and visual performance.
-- **System Design**: Built clear system documents according to version theme requirements, and configured dubbing, copy, and art resources using Excel and project editors.
-- Key Deliverables:
-  - 3 sets of card stories totaling 24k words
-  - 12k words of New Year's and Christmas-themed SMS messages and emails
-  - 1 set of event art requirement designs
-  - System editor configuration for a major version event
-  - 4 sets of dubbing documents
-  - 4 sets of private chat subtitle timeline configurations
-
 ### 网易（上海）网络有限公司 | 文案策划实习生（乙女游戏《时空中的绘旅人》）
 
 **2025.10-2026.2**
