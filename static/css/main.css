@@ -5,6 +5,10 @@
     --h-title-color:#3948d2;
 }
 
+body {
+    font-family: "Microsoft YaHei", "微软雅黑", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
 .header {
     border-bottom: solid 2px var(--bs-blue);
     z-index: 10000;
