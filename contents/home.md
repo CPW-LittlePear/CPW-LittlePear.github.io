@@ -12,7 +12,10 @@ Wechat：xiaoningmeng1934
 
 籍贯：安徽省芜湖市
 
+
+
 #### Education|教育背景
+
 **28届本科：文学院 戏剧影视文学专业，南京大学**
 
 24年高考：总分649，安徽省排名298
@@ -21,13 +24,15 @@ Wechat：xiaoningmeng1934
 
 辅修课程：概率论与数理统计；Python程序设计基础；智能软件工程导论（机器学习）；自然语言处理；智能
 
+
+
 #### Job Interests|职业方向
 
-系统/AI玩法策划；文案策划
+系统/AI玩法策划：[[系统策划作品集]](https://kcnhecphx20u.feishu.cn/drive/folder/DG5UffvjNlLQX4dOKVHc9AHPnEU)
 
-[[文案策划作品集]](https://docs.qq.com/s/oAzjAh_VlTuKuINo98GkVW)
+文案策划：[[文案策划作品集]](https://docs.qq.com/s/oAzjAh_VlTuKuINo98GkVW)
 
-[[系统策划作品集]](https://kcnhecphx20u.feishu.cn/drive/folder/DG5UffvjNlLQX4dOKVHc9AHPnEU)
+
 
 #### Skill|相关技能
 
@@ -40,6 +45,8 @@ AI工具：熟练掌握Prompt工程和LoRA微调；cursor、gpt、tripo、workbu
 游戏设计：作为策划/程序/美术，8次游戏设计比赛完赛并产出demo，熟悉团队游戏制作流程
 
 美术审美：戏剧和影视赏析基础扎实，在校内有多次摄影和短片拍摄经验，有一年板绘经验，具备良好的艺术审美
+
+
 
 #### Game|游戏经历
 
