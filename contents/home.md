@@ -23,7 +23,7 @@ Wechat：xiaoningmeng1934
 
 #### Job Interests|职业方向
 
-系统/ai玩法策划；文案策划
+系统/AI玩法策划；文案策划
 
 [[文案策划作品集]](https://docs.qq.com/s/oAzjAh_VlTuKuINo98GkVW)
 
