@@ -101,22 +101,25 @@ body {
     flex-shrink: 0;
 }
 
-/* 侧边栏底部 */
-#sidebar-footer {
+/* 侧边栏底部联系方式 */
+#sidebar-contact {
     margin-top: auto;
     padding-top: 1.5rem;
     border-top: 1px solid rgba(255,255,255,0.08);
     width: 100%;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
 }
-#sidebar-footer a {
+#sidebar-contact a {
     color: var(--sidebar-text);
     text-decoration: none;
-    font-size: 0.85rem;
-    transition: color 0.2s;
+    font-size: 1.3rem;
+    transition: color 0.2s, transform 0.2s;
 }
-#sidebar-footer a:hover {
+#sidebar-contact a:hover {
     color: var(--sidebar-active);
+    transform: translateY(-2px);
 }
 
 /* ========== 主内容区域 ========== */
