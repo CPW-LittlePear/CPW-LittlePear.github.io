@@ -72,7 +72,13 @@
                 <i class="bi bi-house-fill"></i> 首页
             </a>
             <a class="sidebar-nav-link" href="#project">
-                <i class="bi bi-file-text-fill"></i> 项目经历
+                <i class="bi bi-folder2-open"></i> 项目经历
+            </a>
+            <a class="sidebar-nav-link" href="#skill">
+                <i class="bi bi-tools"></i> 相关技能
+            </a>
+            <a class="sidebar-nav-link" href="#game">
+                <i class="bi bi-dice-6-fill"></i> 游戏经历
             </a>
             <a class="sidebar-nav-link" href="#work">
                 <i class="bi bi-award-fill"></i> 工作经历
@@ -95,6 +101,8 @@
         <div class="mobile-menu-dropdown" id="mobileMenuDropdown">
             <a href="#home" onclick="closeMobileMenu()">首页</a>
             <a href="#project" onclick="closeMobileMenu()">项目经历</a>
+            <a href="#skill" onclick="closeMobileMenu()">相关技能</a>
+            <a href="#game" onclick="closeMobileMenu()">游戏经历</a>
             <a href="#work" onclick="closeMobileMenu()">工作经历</a>
         </div>
     </nav>
@@ -125,9 +133,29 @@
         <section class="bg-gradient-primary-to-secondary-gray content-section" id="project">
             <div class="container px-5">
                 <header>
-                    <h2 id="project-subtitle"><i class="bi bi-file-text-fill"></i>&nbsp;项目经历</h2>
+                    <h2 id="project-subtitle"><i class="bi bi-folder2-open"></i>&nbsp;项目经历</h2>
                 </header>
                 <div class="main-body" id="project-md"></div>
+            </div>
+        </section>
+
+        <!-- Skill（相关技能，对应 Skill.md） -->
+        <section class="bg-gradient-primary-to-secondary-light content-section" id="skill">
+            <div class="container px-5">
+                <header>
+                    <h2 id="skill-subtitle"><i class="bi bi-tools"></i>&nbsp;相关技能</h2>
+                </header>
+                <div class="main-body" id="skill-md"></div>
+            </div>
+        </section>
+
+        <!-- Game（游戏经历，对应 Game.md） -->
+        <section class="bg-gradient-primary-to-secondary-gray content-section" id="game">
+            <div class="container px-5">
+                <header>
+                    <h2 id="game-subtitle"><i class="bi bi-dice-6-fill"></i>&nbsp;游戏经历</h2>
+                </header>
+                <div class="main-body" id="game-md"></div>
             </div>
         </section>
 
@@ -178,6 +206,28 @@
                 document.getElementById('project-md').innerHTML = marked.parse(text);
             })
             .catch(err => console.log('加载 Project.md 失败：', err));
+
+        // 加载 Skill.md 到相关技能板块
+        fetch('contents/Skill.md')
+            .then(response => {
+                if (!response.ok) throw new Error('Skill.md 文件不存在');
+                return response.text();
+            })
+            .then(text => {
+                document.getElementById('skill-md').innerHTML = marked.parse(text);
+            })
+            .catch(err => console.log('加载 Skill.md 失败：', err));
+
+        // 加载 Game.md 到游戏经历板块
+        fetch('contents/Game.md')
+            .then(response => {
+                if (!response.ok) throw new Error('Game.md 文件不存在');
+                return response.text();
+            })
+            .then(text => {
+                document.getElementById('game-md').innerHTML = marked.parse(text);
+            })
+            .catch(err => console.log('加载 Game.md 失败：', err));
 
         // 加载 Work.md 到工作经历板块
         fetch('contents/Work.md')
