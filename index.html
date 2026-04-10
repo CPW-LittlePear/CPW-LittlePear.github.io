@@ -51,113 +51,109 @@
     <script type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
     <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-    <!-- 修复导航栏样式，避免按钮重叠 -->
-    <style>
-        .navbar-nav .nav-item {
-            margin: 0 5px; /* 给导航按钮加间距，避免重叠 */
-        }
-        .navbar-nav .nav-link {
-            white-space: nowrap; /* 防止文字换行 */
-            padding: 8px 12px; /* 调整内边距，按钮更舒展 */
-        }
-        @media (max-width: 768px) {
-            .navbar-nav .nav-item {
-                margin: 5px 0; /* 移动端垂直排列，增加上下间距 */
-            }
-        }
-    </style>
-    
 </head>
 
 <body id="page-top">
-    <!-- Navigation-->
-    <nav class="header navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
-        <div class="container px-5">
-            <a id="page-top-title" class="navbar-brand fw-bold" href="#home">小梨 (LittlePear)</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                MENU
-                <i class="bi-list"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav me-auto my-3 my-lg-0">
-                    <!-- 拆分导航按钮，避免重叠 -->
-                    <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#home">首页</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#project">项目经历</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#work">工作经历</a>
-                    </li>
-                </ul>
-            </div>
+
+    <!-- 左侧侧边栏 -->
+    <div id="sidebar">
+        <!-- 头像 -->
+        <div id="sidebar-avatar">
+            <img src="static/assets/img/photo.png" alt="LittlePear" />
+        </div>
+        <!-- 名字 -->
+        <div id="sidebar-name">
+            <span class="sidebar-name-zh">小梨</span>
+            <span class="sidebar-name-en">LittlePear</span>
+        </div>
+        <!-- 导航链接 -->
+        <nav id="sidebar-nav">
+            <a class="sidebar-nav-link" href="#home">
+                <i class="bi bi-house-fill"></i> 首页
+            </a>
+            <a class="sidebar-nav-link" href="#project">
+                <i class="bi bi-file-text-fill"></i> 项目经历
+            </a>
+            <a class="sidebar-nav-link" href="#work">
+                <i class="bi bi-award-fill"></i> 工作经历
+            </a>
+        </nav>
+        <!-- 底部链接 -->
+        <div id="sidebar-footer">
+            <a href="https://github.com/CPW-LittlePear" target="_blank">
+                <i class="bi bi-github"></i> GitHub
+            </a>
+        </div>
+    </div>
+
+    <!-- 移动端顶部导航栏（小屏幕显示） -->
+    <nav class="mobile-topnav" id="mobileNav">
+        <span class="mobile-topnav-brand">小梨 (LittlePear)</span>
+        <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+            <i class="bi-list"></i>
+        </button>
+        <div class="mobile-menu-dropdown" id="mobileMenuDropdown">
+            <a href="#home" onclick="closeMobileMenu()">首页</a>
+            <a href="#project" onclick="closeMobileMenu()">项目经历</a>
+            <a href="#work" onclick="closeMobileMenu()">工作经历</a>
         </div>
     </nav>
 
-    <!-- Top Section -->
-    <section class="top-section" style="background-image: url('static/assets/img/background.jpeg');">
-        <div class="top-section-content">
+    <!-- 主内容区域 -->
+    <div id="main-content">
+
+        <!-- Top Section Banner -->
+        <section class="top-section" style="background-image: url('static/assets/img/background.jpeg');">
+            <div class="top-section-content">
+                <div class="container px-5">
+                    <h2 id="top-section-bg-text" class="text-white display-3 lh-1 font-alt">LittlePear</h2>
+                </div>
+            </div>
+        </section>
+
+        <!-- Home（首页，对应 home.md） -->
+        <section class="bg-gradient-primary-to-secondary-light content-section" id="home">
             <div class="container px-5">
-                <h2 id="top-section-bg-text" class="text-white display-3 lh-1 font-alt">LittlePear</h2>
+                <header>
+                    <h2 id="home-subtitle">曹培文 | 游戏策划</h2>
+                </header>
+                <div class="main-body" id="home-md"></div>
             </div>
-        </div>
-    </section>
-    <!-- Top Section -->
+        </section>
 
-    <!-- Photo -->
-    <div class="container px-5">
-        <div id="avatar">
-            <img class="shadow" src="static/assets/img/photo.png">
-        </div>
-    </div>
-    <!-- Photo -->
-    
-    <!-- Home（首页，对应 home.md） -->
-    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="home">
-        <div class="container px-5">
-            <header>
-                <h2 id="home-subtitle">曹培文 | 游戏策划</h2>
-            </header>
-            <div class="main-body" id="home-md"></div>
-        </div>
-    </section>
-    <!-- Home -->
-
-    <!-- Project（项目经历，对应 Project.md） -->
-    <section class="bg-gradient-primary-to-secondary-gray mt5 md5" id="project">
-        <div class="container px-5">
-            <header>
-                <h2 id="project-subtitle"><i class="bi bi-file-text-fill"></i>&nbsp;项目经历</h2>
-            </header>
-            <div class="main-body" id="project-md"></div>
-        </div>
-    </section>
-    <!-- Project -->
-
-    <!-- Work（工作经历，对应 Work.md） -->
-    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="work">
-        <div class="container px-5">
-            <header>
-                <h2 id="work-subtitle"><i class="bi bi-award-fill"></i>&nbsp;工作经历</h2>
-            </header>
-            <div class="main-body" id="work-md"></div>
-        </div>
-    </section>
-    <!-- Work -->
-
-    <!-- Footer-->
-    <footer class="bg-bottom text-center py-5">
-        <div class="container px-5">
-            <div class="text-white-50 small">
-                <div id="copyright-text" class="mb-2">&copy; LittlePear 2025-2026. All Rights Reserved.</div>
-                <a id="github-link" href="https://github.com/CPW-LittlePear">Github</a>
-                <span class="mx-1">&middot;</span>
-                <a id="license-link" href="https://github.com/CPW-LittlePear/CPW-LittlePear.github.io/blob/main/LICENSE">License</a>
+        <!-- Project（项目经历，对应 Project.md） -->
+        <section class="bg-gradient-primary-to-secondary-gray content-section" id="project">
+            <div class="container px-5">
+                <header>
+                    <h2 id="project-subtitle"><i class="bi bi-file-text-fill"></i>&nbsp;项目经历</h2>
+                </header>
+                <div class="main-body" id="project-md"></div>
             </div>
-        </div>
-    </footer>
+        </section>
+
+        <!-- Work（工作经历，对应 Work.md） -->
+        <section class="bg-gradient-primary-to-secondary-light content-section" id="work">
+            <div class="container px-5">
+                <header>
+                    <h2 id="work-subtitle"><i class="bi bi-award-fill"></i>&nbsp;工作经历</h2>
+                </header>
+                <div class="main-body" id="work-md"></div>
+            </div>
+        </section>
+
+        <!-- Footer-->
+        <footer class="bg-bottom text-center py-5">
+            <div class="container px-5">
+                <div class="text-white-50 small">
+                    <div id="copyright-text" class="mb-2">&copy; LittlePear 2025-2026. All Rights Reserved.</div>
+                    <a id="github-link" href="https://github.com/CPW-LittlePear">Github</a>
+                    <span class="mx-1">&middot;</span>
+                    <a id="license-link" href="https://github.com/CPW-LittlePear/CPW-LittlePear.github.io/blob/main/LICENSE">License</a>
+                </div>
+            </div>
+        </footer>
+
+    </div><!-- /main-content -->
 
     <!-- 加载 Markdown 文件的核心 JS -->
     <script>
@@ -193,6 +189,33 @@
                 document.getElementById('work-md').innerHTML = marked.parse(text);
             })
             .catch(err => console.log('加载 Work.md 失败：', err));
+
+        // 移动端菜单开关
+        function toggleMobileMenu() {
+            const dropdown = document.getElementById('mobileMenuDropdown');
+            dropdown.classList.toggle('show');
+        }
+        function closeMobileMenu() {
+            document.getElementById('mobileMenuDropdown').classList.remove('show');
+        }
+
+        // 侧边栏高亮当前章节
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.sidebar-nav-link');
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                if (window.scrollY >= section.offsetTop - 100) {
+                    current = section.getAttribute('id');
+                }
+            });
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
     </script>
 
 </body>
