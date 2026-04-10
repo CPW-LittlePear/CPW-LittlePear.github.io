@@ -1,12 +1,10 @@
-#### Contact|联系方式
+#### 个人信息
 
 姓名：曹培文
 
+昵称：小梨
+
 年龄：20（2006年）
-
-Email：xiaoningmeng1934[at]qq.com
-
-Wechat：xiaoningmeng1934
 
 所在地：江苏省南京市
 
@@ -14,7 +12,7 @@ Wechat：xiaoningmeng1934
 
 
 
-#### Education|教育背景
+#### 教育背景
 
 **28届本科：文学院 戏剧影视文学专业，南京大学**
 
@@ -26,7 +24,7 @@ Wechat：xiaoningmeng1934
 
 
 
-#### Job Interests|职业方向
+#### 职业方向
 
 系统/AI玩法策划：[[系统策划作品集]](https://kcnhecphx20u.feishu.cn/drive/folder/DG5UffvjNlLQX4dOKVHc9AHPnEU)
 
