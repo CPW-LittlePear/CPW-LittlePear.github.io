@@ -104,22 +104,35 @@ body {
 /* 侧边栏底部联系方式 */
 #sidebar-contact {
     margin-top: auto;
-    padding-top: 1.5rem;
+    padding-top: 1rem;
     border-top: 1px solid rgba(255,255,255,0.08);
     width: 100%;
     display: flex;
-    justify-content: center;
-    gap: 1.2rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
 }
-#sidebar-contact a {
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
     color: var(--sidebar-text);
-    text-decoration: none;
-    font-size: 1.3rem;
-    transition: color 0.2s, transform 0.2s;
+    font-size: 0.78rem;
+    line-height: 1.4;
 }
-#sidebar-contact a:hover {
-    color: var(--sidebar-active);
-    transform: translateY(-2px);
+.contact-item i {
+    font-size: 0.9rem;
+    flex-shrink: 0;
+}
+.contact-item span {
+    word-break: break-all;
+}
+.wechat-qrcode {
+    width: 80px !important;
+    height: auto !important;
+    border-radius: 6px !important;
+    margin-top: 0.3rem;
+    border: 2px solid rgba(255,255,255,0.15) !important;
 }
 
 /* ========== 主内容区域 ========== */

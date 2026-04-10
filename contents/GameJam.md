@@ -1,0 +1,6 @@
+- 第二届 034 GameJam 程序 2026.3 [demo]
+- 2026Global GameJam 美术 2026.1 [demo]
+- 第九届 雷火makers 策划 2025.10 [demo video]
+- 2025Taptap聚光灯GameJam 杭州站 策划 2025.8 [策划案]
+- 2025Ciga GameJam 策划 2025.6 [策划案]
+- 2025Taptap聚光灯GameJam 上海站 策划 2025.6 [demo video]

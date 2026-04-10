@@ -74,6 +74,9 @@
             <a class="sidebar-nav-link" href="#project">
                 <i class="bi bi-folder2-open"></i> 项目经历
             </a>
+            <a class="sidebar-nav-link" href="#gamejam">
+                <i class="bi bi-controller"></i> GameJam
+            </a>
             <a class="sidebar-nav-link" href="#skill">
                 <i class="bi bi-tools"></i> 相关技能
             </a>
@@ -84,17 +87,20 @@
                 <i class="bi bi-award-fill"></i> 工作经历
             </a>
         </nav>
+
         <!-- 联系方式 -->
         <div id="sidebar-contact">
-            <a href="mailto:xiaoningmeng1934@qq.com" title="Email">
-                <i class="bi bi-envelope-fill"></i>
-            </a>
-            <a href="https://github.com/CPW-LittlePear" target="_blank" title="GitHub">
-                <i class="bi bi-github"></i>
-            </a>
-            <a href="#" title="微信：xiaoningmeng1934">
+            <div class="contact-item">
+                <i class="bi bi-envelope"></i>
+                <span>xiaoningmeng1934@qq.com</span>
+            </div>
+            <div class="contact-item">
                 <i class="bi bi-wechat"></i>
-            </a>
+                <span>xiaoningmeng1934</span>
+            </div>
+            <div class="contact-item">
+                <img src="static/assets/img/wechat-qrcode.jpg" alt="微信二维码" class="wechat-qrcode" />
+            </div>
         </div>
     </div>
 
@@ -107,6 +113,7 @@
         <div class="mobile-menu-dropdown" id="mobileMenuDropdown">
             <a href="#home" onclick="closeMobileMenu()">首页</a>
             <a href="#project" onclick="closeMobileMenu()">项目经历</a>
+            <a href="#gamejam" onclick="closeMobileMenu()">GameJam</a>
             <a href="#skill" onclick="closeMobileMenu()">相关技能</a>
             <a href="#game" onclick="closeMobileMenu()">游戏经历</a>
             <a href="#work" onclick="closeMobileMenu()">工作经历</a>
@@ -142,6 +149,16 @@
                     <h2 id="project-subtitle"><i class="bi bi-folder2-open"></i>&nbsp;项目经历</h2>
                 </header>
                 <div class="main-body" id="project-md"></div>
+            </div>
+        </section>
+
+        <!-- GameJam（GameJam，对应 GameJam.md） -->
+        <section class="bg-gradient-primary-to-secondary-light content-section" id="gamejam">
+            <div class="container px-5">
+                <header>
+                    <h2 id="gamejam-subtitle"><i class="bi bi-controller"></i>&nbsp;GameJam</h2>
+                </header>
+                <div class="main-body" id="gamejam-md"></div>
             </div>
         </section>
 
@@ -212,6 +229,17 @@
                 document.getElementById('project-md').innerHTML = marked.parse(text);
             })
             .catch(err => console.log('加载 Project.md 失败：', err));
+
+        // 加载 GameJam.md 到 GameJam 板块
+        fetch('contents/GameJam.md')
+            .then(response => {
+                if (!response.ok) throw new Error('GameJam.md 文件不存在');
+                return response.text();
+            })
+            .then(text => {
+                document.getElementById('gamejam-md').innerHTML = marked.parse(text);
+            })
+            .catch(err => console.log('加载 GameJam.md 失败：', err));
 
         // 加载 Skill.md 到相关技能板块
         fetch('contents/Skill.md')
