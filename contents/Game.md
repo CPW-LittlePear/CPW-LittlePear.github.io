@@ -1,5 +1,3 @@
-#### Game|游戏经历
-
 - <strong>FPS/TPS：</strong>《CS：GO》1000h+；《PUBG》100h+；《和平精英》超级王牌16星
 
 - <strong>RPG：</strong>《原神》1000h+ 氪金500r+，游戏系统和世界观拆解3k+
