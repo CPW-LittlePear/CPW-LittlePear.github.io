@@ -1,4 +1,4 @@
-#### 光子游戏制作大赛 | 主策划/模型微调
+#### [首届光子游戏大赛](https://guanghe.qq.com/lightspeedjam/home) | 主策划/模型微调
 
 **2025.12–2026.5** [[策划案]](https://pcnmtrxodiga.feishu.cn/wiki/U4k3wlpOoiTmvbkGTc1cRi7KnOb)
 
@@ -11,7 +11,7 @@
 
 
 
-#### 三七互娱高校游戏创新大赛 | 游戏策划/程序
+#### [三七互娱高校游戏创新大赛](https://qixinweb.37.com/h5/huodong/umic/2025/?sessionid=2066057013#/detail) | 游戏策划/程序
 
 **2025.6-2025.9** [[demo video]](https://www.bilibili.com/video/BV1o9UNBhEHT/?share_source=copy_web&vd_source=34a280ece54030283974414564b24c01)
 
