@@ -120,9 +120,11 @@ body {
     font-size: 0.78rem;
     line-height: 1.4;
 }
-.contact-item i {
+.contact-item i,
+.contact-item svg {
     font-size: 0.9rem;
     flex-shrink: 0;
+    vertical-align: middle;
 }
 .contact-text {
     flex: 1;
