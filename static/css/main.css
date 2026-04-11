@@ -151,6 +151,19 @@ body {
     opacity: 1;
     color: #fff;
 }
+
+/* GameJam 图片画廊 */
+.gamejam-gallery {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 2rem;
+}
+.gamejam-gallery img {
+    flex: 1;
+    width: 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
 .wechat-qrcode {
     width: 80px !important;
     height: auto !important;

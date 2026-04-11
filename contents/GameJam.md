@@ -1,3 +1,8 @@
+<div class="gamejam-gallery">
+<img src="contents/images/1.png" alt="游戏截图1" />
+<img src="contents/images/2.png" alt="游戏截图2" />
+</div>
+
 程序：第二届 034 GameJam 2026.3 [[demo]](https://034gamejam.uneoon.com/games/24)
 
 美术：2026Global GameJam 2026.1 [[demo]](https://globalgamejam.org/games/2026/mask-party-5)
