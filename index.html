@@ -95,11 +95,17 @@
         <div id="sidebar-contact">
             <div class="contact-item">
                 <i class="bi bi-envelope"></i>
-                <span>xiaoningmeng1934@qq.com</span>
+                <span class="contact-text">xiaoningmeng1934@qq.com</span>
+                <button class="copy-btn" onclick="copyText('xiaoningmeng1934@qq.com', this)" title="复制邮箱">
+                    <i class="bi bi-clipboard"></i>
+                </button>
             </div>
             <div class="contact-item">
                 <i class="bi bi-wechat"></i>
-                <span>wechat: xiaoningmeng1934</span>
+                <span class="contact-text">wechat: xiaoningmeng1934</span>
+                <button class="copy-btn" onclick="copyText('xiaoningmeng1934', this)" title="复制微信号">
+                    <i class="bi bi-clipboard"></i>
+                </button>
             </div>
             <div class="contact-item">
                 <img src="static/assets/img/wechat-qrcode.jpg" alt="微信二维码" class="wechat-qrcode" onclick="openQrcode(this)" />
@@ -311,6 +317,15 @@
         }
         function closeQrcode() {
             document.getElementById('qrcode-overlay').classList.remove('show');
+        }
+
+        // 复制文字
+        function copyText(text, btn) {
+            navigator.clipboard.writeText(text).then(() => {
+                const icon = btn.querySelector('i');
+                icon.className = 'bi bi-check-lg';
+                setTimeout(() => { icon.className = 'bi bi-clipboard'; }, 1500);
+            });
         }
 
         // 移动端菜单开关

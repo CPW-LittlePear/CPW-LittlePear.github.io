@@ -24,7 +24,7 @@ body {
     top: 0;
     left: 0;
     width: var(--sidebar-width);
-    height: 100vh;
+    min-height: 100vh;
     background: var(--sidebar-bg);
     display: flex;
     flex-direction: column;
@@ -119,15 +119,35 @@ body {
     color: var(--sidebar-text);
     font-size: 0.78rem;
     line-height: 1.4;
-    white-space: nowrap;
 }
 .contact-item i {
     font-size: 0.9rem;
     flex-shrink: 0;
 }
-.contact-item span {
+.contact-text {
+    flex: 1;
     overflow: hidden;
     text-overflow: ellipsis;
+    white-space: nowrap;
+    min-width: 0;
+}
+
+/* 复制按钮 */
+.copy-btn {
+    background: none;
+    border: none;
+    color: var(--sidebar-text);
+    cursor: pointer;
+    padding: 2px 4px;
+    font-size: 0.75rem;
+    opacity: 0.5;
+    transition: opacity 0.2s, color 0.2s;
+    flex-shrink: 0;
+    line-height: 1;
+}
+.copy-btn:hover {
+    opacity: 1;
+    color: #fff;
 }
 .wechat-qrcode {
     width: 80px !important;
