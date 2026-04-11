@@ -328,6 +328,32 @@
             });
         }
 
+        // 超链接悬停提示（显示在链接下方）
+        const tooltip = document.createElement('div');
+        tooltip.className = 'link-tooltip';
+        document.body.appendChild(tooltip);
+
+        document.addEventListener('mouseover', function(e) {
+            const link = e.target.closest('a[href][target="_blank"]');
+            if (!link || link.title) return;
+            tooltip.textContent = link.href;
+            tooltip.classList.add('show');
+        });
+
+        document.addEventListener('mousemove', function(e) {
+            if (!tooltip.classList.contains('show')) return;
+            const x = e.clientX;
+            const y = e.clientY + 18;
+            tooltip.style.left = x + 'px';
+            tooltip.style.top = y + 'px';
+        });
+
+        document.addEventListener('mouseout', function(e) {
+            if (e.target.closest('a[href][target="_blank"]')) {
+                tooltip.classList.remove('show');
+            }
+        });
+
         // 移动端菜单开关
         function toggleMobileMenu() {
             const dropdown = document.getElementById('mobileMenuDropdown');
