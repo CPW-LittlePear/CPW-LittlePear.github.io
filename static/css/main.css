@@ -187,7 +187,7 @@ body {
     background-size: cover;
     height: 22rem;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
 }
 .top-section h2 {
     font-weight: 400;
@@ -196,6 +196,9 @@ body {
     position: relative;
     z-index: 1;
     width: 100%;
+}
+.top-section .top-section-content .container {
+    padding-bottom: 1.5rem;
 }
 .top-section:before {
     content: "";
