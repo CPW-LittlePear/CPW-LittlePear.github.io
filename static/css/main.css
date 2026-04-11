@@ -135,6 +135,38 @@ body {
     border-radius: 6px !important;
     margin-top: 0.3rem;
     border: 2px solid rgba(255,255,255,0.15) !important;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.wechat-qrcode:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+}
+
+/* 二维码放大遮罩 */
+#qrcode-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.75);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#qrcode-overlay.show {
+    display: flex;
+}
+#qrcode-overlay-img {
+    max-width: min(320px, 85vw);
+    max-height: 85vh;
+    border-radius: 12px;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.6);
+    animation: qrZoomIn 0.2s ease;
+}
+@keyframes qrZoomIn {
+    from { transform: scale(0.7); opacity: 0; }
+    to   { transform: scale(1);   opacity: 1; }
 }
 
 /* ========== 主内容区域 ========== */

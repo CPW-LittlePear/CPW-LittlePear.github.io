@@ -69,7 +69,7 @@
         <!-- 导航链接 -->
         <nav id="sidebar-nav">
             <a class="sidebar-nav-link" href="#home">
-                <i class="bi bi-mortarboard-fill"></i> 教育背景
+                <i class="bi bi-book-fill"></i> 教育背景
             </a>
             <a class="sidebar-nav-link" href="#work">
                 <i class="bi bi-award-fill"></i> 实习经历
@@ -102,9 +102,14 @@
                 <span>wechat: xiaoningmeng1934</span>
             </div>
             <div class="contact-item">
-                <img src="static/assets/img/wechat-qrcode.jpg" alt="微信二维码" class="wechat-qrcode" />
+                <img src="static/assets/img/wechat-qrcode.jpg" alt="微信二维码" class="wechat-qrcode" onclick="openQrcode(this)" />
             </div>
         </div>
+    </div>
+
+    <!-- 二维码放大遮罩 -->
+    <div id="qrcode-overlay" onclick="closeQrcode()">
+        <img id="qrcode-overlay-img" src="" alt="微信二维码" />
     </div>
 
     <!-- 移动端顶部导航栏（小屏幕显示） -->
@@ -140,7 +145,7 @@
         <section class="bg-gradient-primary-to-secondary-light content-section" id="home">
             <div class="container px-5">
                 <header>
-                    <h2 id="home-subtitle"><i class="bi bi-mortarboard-fill"></i>&nbsp;教育背景</h2>
+                    <h2 id="home-subtitle"><i class="bi bi-book-fill"></i>&nbsp;教育背景</h2>
                 </header>
                 <div class="main-body" id="home-md"></div>
             </div>
@@ -298,6 +303,15 @@
                 document.getElementById('work-md').innerHTML = marked.parse(text);
             })
             .catch(err => console.log('加载 Work.md 失败：', err));
+
+        // 二维码放大
+        function openQrcode(img) {
+            document.getElementById('qrcode-overlay-img').src = img.src;
+            document.getElementById('qrcode-overlay').classList.add('show');
+        }
+        function closeQrcode() {
+            document.getElementById('qrcode-overlay').classList.remove('show');
+        }
 
         // 移动端菜单开关
         function toggleMobileMenu() {
