@@ -359,6 +359,18 @@
         });
 
         sections.forEach(section => observer.observe(section));
+
+        // 导航链接强制瞬时跳转
+        document.querySelectorAll('a[href^="#"]').forEach(link => {
+            link.addEventListener('click', function(e) {
+                const id = this.getAttribute('href').slice(1);
+                const target = document.getElementById(id);
+                if (target) {
+                    e.preventDefault();
+                    window.scrollTo(0, target.offsetTop);
+                }
+            });
+        });
     </script>
 
 </body>
