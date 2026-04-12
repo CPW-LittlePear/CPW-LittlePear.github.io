@@ -233,8 +233,12 @@
 
     <!-- 加载 Markdown 文件的核心 JS -->
     <script>
-        // 开启 marked.js HTML 渲染
-        marked.setOptions({ html: true });
+        // 开启 marked.js HTML 渲染（v5：自定义 renderer 阻止 HTML 被转义）
+        const customRenderer = new marked.Renderer();
+        customRenderer.image = function(href, title, text) {
+            return `<img src="${href}" alt="${text}" title="${title || ''}" loading="lazy" />`;
+        };
+        marked.use({ renderer: customRenderer });
 
         // 加载 home.md 到首页
         fetch('contents/home.md')
