@@ -18,11 +18,11 @@
 
 [[游戏拆解分析合集]](https://kcnhecphx20u.feishu.cn/drive/folder/S1sUfK6GblajyXdidVTcLHSbnFh?from=space_personal_filelist)
 
-[[《原神》系统拆解]](https://kcnhecphx20u.feishu.cn/wiki/CbnDw66LGi5qjOk5ZHucRWmRnKe)
+[[《原神》养成系统拆解]](https://kcnhecphx20u.feishu.cn/wiki/CbnDw66LGi5qjOk5ZHucRWmRnKe) 已完成
 
-[[《cs2》系统拆解]](https://kcnhecphx20u.feishu.cn/wiki/Kya1wyuMIiA8Ylk5jivcrX3gnCb?pre_pathname=%2Fdrive%2Ffolder%2FS1sUfK6GblajyXdidVTcLHSbnFh) 
+[[《三角洲行动》经济系统拆解]](https://kcnhecphx20u.feishu.cn/wiki/Kya1wyuMIiA8Ylk5jivcrX3gnCb?pre_pathname=%2Fdrive%2Ffolder%2FS1sUfK6GblajyXdidVTcLHSbnFh) 
 
-[[《和平精英系统拆解》]](https://kcnhecphx20u.feishu.cn/wiki/IUO5w2n46iWmfZkxnI1cNIvInLe)
+[[《和平精英系统拆解》]](https://kcnhecphx20u.feishu.cn/wiki/IUO5w2n46iWmfZkxnI1cNIvInLe) 制作ing
 
 [[竞技游戏节奏分析对比]](https://kcnhecphx20u.feishu.cn/wiki/FVVwwzCX4i44uykK7pRcNHSrnHb) 对MOBA、大逃杀、对称竞技、休闲竞技等品类游戏的节奏和资源进行分析
 
