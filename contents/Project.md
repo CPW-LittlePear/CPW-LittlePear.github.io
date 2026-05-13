@@ -1,6 +1,6 @@
 #### [首届光子游戏大赛](https://guanghe.qq.com/lightspeedjam/home) | 主策划/模型微调
 
-**2025.12–2026.5** [[策划案]](https://pcnmtrxodiga.feishu.cn/wiki/U4k3wlpOoiTmvbkGTc1cRi7KnOb)
+**2025.12–2026.5** [[策划案]](https://pcnmtrxodiga.feishu.cn/wiki/U4k3wlpOoiTmvbkGTc1cRi7KnOb) [[demo video]]( https://www.bilibili.com/video/BV16X516vE38/?share_source=copy_web&vd_source=34a280ece54030283974414564b24c01)
 
 ![d7165b7fb5e7ab1a485756acab37318](contents/images/d7165b7fb5e7ab1a485756acab37318.png)
 
