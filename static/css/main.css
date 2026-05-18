@@ -259,9 +259,9 @@ section header h2 {
 }
 
 section .main-body {
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.8;
+    font-size: 1.3rem;
+    font-weight: 200;
+    line-height: 2.4rem;
 }
 
 section .main-body img {
