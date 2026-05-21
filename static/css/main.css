@@ -208,6 +208,7 @@ body {
 #main-content {
     margin-left: var(--sidebar-width);
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 /* 扩大容器宽度，减少两边留白 */
