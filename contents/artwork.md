@@ -32,6 +32,6 @@
 
 [[模型微调学习笔记]](https://kcnhecphx20u.feishu.cn/wiki/OgEqwnfiiipdrNk7SMrcwBhrn1f) 在光子游戏制作大赛中 为了让npc更符合人设，学习了LoRA微调
 
-[[ai手搓demo]](https://kcnhecphx20u.feishu.cn/wiki/F749wgUFzipsoKkn0zDcLGxPnRe) 想要单人利用agent打造ai参与全流程的demo 但暂未完成（在忙比赛和实习 等空闲下来一定要做完）
-
 [[关于ai原生游戏的思考]](https://kcnhecphx20u.feishu.cn/wiki/JPWLwkoLlilOKOkZcXkckplunad)
+
+[[关于第一款galgame的创作记录]](https://kcnhecphx20u.feishu.cn/wiki/QcvdwgHVhibd7OkJ7kHc1al5nGf)

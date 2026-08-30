@@ -1,12 +1,3 @@
-#### 互联网求职一站式赋能 AI 智能体 | 项目负责人/AI 产品开发
-
-**2026.05-至今**
-
-- <strong>项目描述：</strong>基于火山引擎扣子 Coze 平台设计求职全链路 AI Agent，覆盖信息建档、简历优化、AI 模拟面试、弱点复盘、赛事推荐、情绪疏导等 9 大模块，形成完整服务闭环
-- <strong>个人贡献：</strong>编写 2000+ 字符 System Prompt，定义 Agent 角色、工作流、回复风格与约束条件；搭建工作流编排（数据表查询→LLM 格式化→结果输出），集成 33 家互联网企业校招数据表，实现企业校招信息一键查询
-
-————————————————————————————————————————————
-
 #### [首届光子游戏大赛](https://guanghe.qq.com/lightspeedjam/home) | 主策划/模型微调
 
 **2025.12–2026.5** [[策划案]](https://pcnmtrxodiga.feishu.cn/wiki/U4k3wlpOoiTmvbkGTc1cRi7KnOb) [[demo video]]( https://www.bilibili.com/video/BV16X516vE38/?share_source=copy_web&vd_source=34a280ece54030283974414564b24c01)
