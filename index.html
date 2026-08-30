@@ -68,9 +68,6 @@
             <a class="sidebar-nav-link" href="#home">
                 <i class="bi bi-book-fill"></i> 教育背景
             </a>
-            <a class="sidebar-nav-link" href="#campus">
-                <i class="bi bi-mortarboard-fill"></i> 校园经历
-            </a>
             <a class="sidebar-nav-link" href="#work">
                 <i class="bi bi-award-fill"></i> 实习经历
             </a>
@@ -88,6 +85,9 @@
             </a>
             <a class="sidebar-nav-link" href="#skill">
                 <i class="bi bi-tools"></i> 相关技能
+            </a>
+            <a class="sidebar-nav-link" href="#campus">
+                <i class="bi bi-mortarboard-fill"></i> 校园经历
             </a>
         </nav>
 
@@ -126,13 +126,13 @@
         </button>
         <div class="mobile-menu-dropdown" id="mobileMenuDropdown">
             <a href="#home" onclick="closeMobileMenu()">教育背景</a>
-            <a href="#campus" onclick="closeMobileMenu()">校园经历</a>
             <a href="#work" onclick="closeMobileMenu()">实习经历</a>
             <a href="#project" onclick="closeMobileMenu()">项目经历</a>
             <a href="#gamejam" onclick="closeMobileMenu()">GameJam</a>
             <a href="#artwork" onclick="closeMobileMenu()">作品集</a>
             <a href="#game" onclick="closeMobileMenu()">游戏经历</a>
             <a href="#skill" onclick="closeMobileMenu()">相关技能</a>
+            <a href="#campus" onclick="closeMobileMenu()">校园经历</a>
         </div>
     </nav>
 
@@ -158,18 +158,8 @@
             </div>
         </section>
 
-        <!-- Campus（校园经历，对应 campus.md） -->
-        <section class="bg-gradient-primary-to-secondary-gray content-section" id="campus">
-            <div class="container px-5">
-                <header>
-                    <h2 id="campus-subtitle"><i class="bi bi-mortarboard-fill"></i>&nbsp;校园经历</h2>
-                </header>
-                <div class="main-body" id="campus-md"></div>
-            </div>
-        </section>
-
         <!-- Work（实习经历，对应 Work.md） -->
-        <section class="bg-gradient-primary-to-secondary-light content-section" id="work">
+        <section class="bg-gradient-primary-to-secondary-gray content-section" id="work">
             <div class="container px-5">
                 <header>
                     <h2 id="work-subtitle"><i class="bi bi-award-fill"></i>&nbsp;实习经历</h2>
@@ -179,7 +169,7 @@
         </section>
 
         <!-- Project（项目经历，对应 Project.md） -->
-        <section class="bg-gradient-primary-to-secondary-gray content-section" id="project">
+        <section class="bg-gradient-primary-to-secondary-light content-section" id="project">
             <div class="container px-5">
                 <header>
                     <h2 id="project-subtitle"><i class="bi bi-folder2-open"></i>&nbsp;项目经历</h2>
@@ -189,7 +179,7 @@
         </section>
 
         <!-- GameJam（GameJam，对应 GameJam.md） -->
-        <section class="bg-gradient-primary-to-secondary-light content-section" id="gamejam">
+        <section class="bg-gradient-primary-to-secondary-gray content-section" id="gamejam">
             <div class="container px-5">
                 <header>
                     <h2 id="gamejam-subtitle"><i class="bi bi-controller"></i>&nbsp;GameJam</h2>
@@ -199,7 +189,7 @@
         </section>
 
         <!-- Artwork（作品集，对应 artwork.md） -->
-        <section class="bg-gradient-primary-to-secondary-gray content-section" id="artwork">
+        <section class="bg-gradient-primary-to-secondary-light content-section" id="artwork">
             <div class="container px-5">
                 <header>
                     <h2 id="artwork-subtitle"><i class="bi bi-palette-fill"></i>&nbsp;作品集</h2>
@@ -209,7 +199,7 @@
         </section>
 
         <!-- Game（游戏经历，对应 Game.md） -->
-        <section class="bg-gradient-primary-to-secondary-light content-section" id="game">
+        <section class="bg-gradient-primary-to-secondary-gray content-section" id="game">
             <div class="container px-5">
                 <header>
                     <h2 id="game-subtitle"><i class="bi bi-dice-6-fill"></i>&nbsp;游戏经历</h2>
@@ -219,12 +209,22 @@
         </section>
 
         <!-- Skill（相关技能，对应 Skill.md） -->
-        <section class="bg-gradient-primary-to-secondary-gray content-section last-section" id="skill">
+        <section class="bg-gradient-primary-to-secondary-light content-section" id="skill">
             <div class="container px-5">
                 <header>
                     <h2 id="skill-subtitle"><i class="bi bi-tools"></i>&nbsp;相关技能</h2>
                 </header>
                 <div class="main-body" id="skill-md"></div>
+            </div>
+        </section>
+
+        <!-- Campus（校园经历，对应 campus.md） -->
+        <section class="bg-gradient-primary-to-secondary-gray content-section last-section" id="campus">
+            <div class="container px-5">
+                <header>
+                    <h2 id="campus-subtitle"><i class="bi bi-mortarboard-fill"></i>&nbsp;校园经历</h2>
+                </header>
+                <div class="main-body" id="campus-md"></div>
             </div>
         </section>
 
