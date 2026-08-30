@@ -24,7 +24,7 @@ body {
     top: 0;
     left: 0;
     width: var(--sidebar-width);
-    min-height: 100vh;
+    height: 100vh;
     background: var(--sidebar-bg);
     display: flex;
     flex-direction: column;
@@ -33,6 +33,31 @@ body {
     z-index: 9999;
     box-shadow: 2px 0 12px rgba(0,0,0,0.15);
     overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255,255,255,0.25) transparent;
+}
+
+/* 内容高于视口时在侧边栏内部滚动，子项保持自然高度，不被 flex 压缩 */
+#sidebar-avatar,
+#sidebar-name,
+#sidebar-nav,
+#sidebar-contact {
+    flex-shrink: 0;
+}
+
+#sidebar::-webkit-scrollbar {
+    width: 6px;
+}
+#sidebar::-webkit-scrollbar-track {
+    background: transparent;
+}
+#sidebar::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.22);
+    border-radius: 3px;
+}
+#sidebar::-webkit-scrollbar-thumb:hover {
+    background: rgba(255,255,255,0.4);
 }
 
 /* 侧边栏头像 */
@@ -72,7 +97,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 4px;
-    flex: 1;
+    flex: 1 0 auto;
 }
 
 .sidebar-nav-link {
