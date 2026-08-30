@@ -1,5 +1,7 @@
 - <strong>编程基础：</strong>熟悉UE5（地编和蓝图插件）、Unity，掌握python和C#编程语言
 
+- <strong>交互设计：</strong>擅长使用figma进行交互原型UI设计，具备扎实的交互设计思维，能独立完成用户流程图（User Flow）、线框图（Wireframe）及高保真可交互原型的设计与交付
+
 - <strong>写作特长：</strong>文风细腻流畅，擅长现实向、奇幻和情感题材，具备7年资深同人和原创剧情写作经验，能与文案同学进行有效沟通
 
 - <strong>AI工具：</strong>cursor、gpt、tripo、workbuddy、seedance2.5深度体验用户；实习期间使用codebuddy进行AI游戏创作三个月，累积消耗token过百亿
