@@ -34,4 +34,4 @@
 
 [[关于ai原生游戏的思考]](https://kcnhecphx20u.feishu.cn/wiki/JPWLwkoLlilOKOkZcXkckplunad)
 
-[[关于第一款galgame的创作记录]](https://kcnhecphx20u.feishu.cn/wiki/QcvdwgHVhibd7OkJ7kHc1al5nGf)
+[[关于第一款galgame的创作记录]](https://mp.weixin.qq.com/s/KXIvGim85Nh5ab4XUxiq_Q)
