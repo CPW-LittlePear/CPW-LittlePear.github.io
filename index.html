@@ -228,7 +228,7 @@
         marked.use({ renderer: customRenderer });
 
         // 加载 home.md 到首页
-        fetch('contents/home.md')
+        fetch('contents/home.md', { cache: 'no-store' })
             .then(response => {
                 if (!response.ok) throw new Error('home.md 文件不存在');
                 return response.text();
@@ -239,7 +239,7 @@
             .catch(err => console.log('加载 home.md 失败：', err));
 
         // 加载 campus.md 到校园经历板块
-        fetch('contents/campus.md')
+        fetch('contents/campus.md', { cache: 'no-store' })
             .then(response => {
                 if (!response.ok) throw new Error('campus.md 文件不存在');
                 return response.text();
@@ -250,7 +250,7 @@
             .catch(err => console.log('加载 campus.md 失败：', err));
 
         // 加载 Project.md 到项目经历板块
-        fetch('contents/Project.md')
+        fetch('contents/Project.md', { cache: 'no-store' })
             .then(response => {
                 if (!response.ok) throw new Error('Project.md 文件不存在');
                 return response.text();
@@ -261,7 +261,7 @@
             .catch(err => console.log('加载 Project.md 失败：', err));
 
         // 加载 GameJam.md 到 GameJam 板块
-        fetch('contents/GameJam.md')
+        fetch('contents/GameJam.md', { cache: 'no-store' })
             .then(response => {
                 if (!response.ok) throw new Error('GameJam.md 文件不存在');
                 return response.text();
@@ -272,7 +272,7 @@
             .catch(err => console.log('加载 GameJam.md 失败：', err));
 
         // 加载 artwork.md 到作品集板块
-        fetch('contents/artwork.md')
+        fetch('contents/artwork.md', { cache: 'no-store' })
             .then(response => {
                 if (!response.ok) throw new Error('artwork.md 文件不存在');
                 return response.text();
@@ -283,7 +283,7 @@
             .catch(err => console.log('加载 artwork.md 失败：', err));
 
         // 加载 Skill.md 到相关技能板块
-        fetch('contents/Skill.md')
+        fetch('contents/Skill.md', { cache: 'no-store' })
             .then(response => {
                 if (!response.ok) throw new Error('Skill.md 文件不存在');
                 return response.text();
@@ -294,7 +294,7 @@
             .catch(err => console.log('加载 Skill.md 失败：', err));
 
         // 加载 Game.md 到游戏经历板块
-        fetch('contents/Game.md')
+        fetch('contents/Game.md', { cache: 'no-store' })
             .then(response => {
                 if (!response.ok) throw new Error('Game.md 文件不存在');
                 return response.text();
@@ -305,7 +305,7 @@
             .catch(err => console.log('加载 Game.md 失败：', err));
 
         // 加载 Work.md 到工作经历板块
-        fetch('contents/Work.md')
+        fetch('contents/Work.md', { cache: 'no-store' })
             .then(response => {
                 if (!response.ok) throw new Error('Work.md 文件不存在');
                 return response.text();

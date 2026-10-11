@@ -2,7 +2,9 @@
 
 **策划案：**
 
- [[光子游戏制作大赛 ai小镇 策划案]](https://pcnmtrxodiga.feishu.cn/wiki/U4k3wlpOoiTmvbkGTc1cRi7KnOb)
+[[腾讯游戏创作大赛 AI玩法策划案]](https://kcnhecphx20u.feishu.cn/wiki/LXb4wluanihHwpkP1wjcXgqUngb)
+
+[[光子游戏制作大赛 ai小镇 策划案]](https://pcnmtrxodiga.feishu.cn/wiki/U4k3wlpOoiTmvbkGTc1cRi7KnOb)
 
 [[第九届 雷火makers策划案]](https://pcnmtrxodiga.feishu.cn/wiki/YNb0wCuN5iTSN6keCOOccKvcn6c?from=space_personal_filelist&pre_pathname=%2Fdrive%2Ffolder%2FOvDKfhIwzl6u9OduUrdcL8TunNr&previous_navigation_time=1775876867275)  [[demo video]](https://www.bilibili.com/video/BV1j9UNBaE11/?share_source=copy_web&vd_source=34a280ece54030283974414564b24c01) 
 
@@ -15,8 +17,6 @@
 
 
 **游戏拆解和分析：**
-
-[[游戏拆解分析合集]](https://kcnhecphx20u.feishu.cn/drive/folder/S1sUfK6GblajyXdidVTcLHSbnFh?from=space_personal_filelist)
 
 [[《原神》养成系统拆解]](https://kcnhecphx20u.feishu.cn/wiki/CbnDw66LGi5qjOk5ZHucRWmRnKe) 对比市面上其他二游，对《原神》的养成系统进行不同维度的分析
 
