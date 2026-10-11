@@ -1,3 +1,14 @@
+#### [腾讯游戏创作大赛](https://gameinstitute.qq.com/awards2026) | AI玩法策划
+
+**2026.8–2026.9** [[策划案]](https://kcnhecphx20u.feishu.cn/wiki/LXb4wluanihHwpkP1wjcXgqUngb?from=from_copylink) [[demo video]]( https://www.bilibili.com/video/BV1MUp56jEBD/?share_source=copy_web&vd_source=34a280ece54030283974414564b24c01)
+
+![ddl](contents/images/ddl.png)
+
+- <strong>项目描述：</strong>校园题材的AI对话+塔防混合玩法游戏，采用「塔防主玩法 + AI 恋爱模拟 AVG 副玩法」双线结构，探索大模型驱动的 NPC 在叙事型玩法中的工程化落地
+- <strong>核心玩法：</strong>玩家扮演被困在异世界的女大学生。白天自主安排行程并与 AI NPC 实时对话提升好感度；夜晚通过战斗提升 GPA。28 天内 GPA 排名第一才能回到原世界，且可带好感度最高的一位离开：好感度数据直接决定角色结局的分支
+- <strong>AI 玩法设计：</strong>主导大模型在玩法层的落地，设计 9 个角色的 agent 提示词体系与对话意愿判定机制（好感度，话题匹配，玩家措辞）；设计 AI 与战斗玩法的联动，按战斗倾向制定 NPC 先手选棋优先级、对决抽取权重、彩蛋道具的对话触发与战斗加成对接
+
+
 #### [首届光子游戏大赛](https://guanghe.qq.com/lightspeedjam/home) | 主策划/模型微调
 
 **2025.12–2026.5** [[策划案]](https://pcnmtrxodiga.feishu.cn/wiki/U4k3wlpOoiTmvbkGTc1cRi7KnOb) [[demo video]]( https://www.bilibili.com/video/BV16X516vE38/?share_source=copy_web&vd_source=34a280ece54030283974414564b24c01)
