@@ -1,4 +1,4 @@
-程序：第二届 034 GameJam 2026.3 [[demo]](https://034gamejam.uneoon.com/games/24)
+程序：第二届 034 GameJam 2026.3 [[demo]](<static/download/完美通关 逃离（3）作品.zip>)
 
 美术：2026Global GameJam 2026.1 [[demo]](https://globalgamejam.org/games/2026/mask-party-5)
 
