@@ -4,7 +4,7 @@
 
 - <strong>RPG：</strong>《原神》1000h+ 氪金500r+；《异环》开服玩家；《洛克王国：世界》300h+，通行证满氪玩家
 
-- <strong>休闲派对向：</strong>《蛋仔派对》历史最高：巅峰凤凰蛋段位；《鹅鸭杀》场数500+；《网易狼人杀》场数300+
+- <strong>休闲派对向：</strong>《蛋仔派对》历史最高：巅峰凤凰蛋段位；《鹅鸭杀》场数500+；《网易狼人杀》场数300+；派对独游：how to fish；peak；big walk；RV There Yet? ；Pico Park等
 
 - <strong>MOBA：</strong>《王者荣耀》大乱斗模式场数100+
 

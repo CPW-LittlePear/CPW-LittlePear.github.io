@@ -26,6 +26,7 @@
 
 [[竞技游戏节奏分析对比]](https://kcnhecphx20u.feishu.cn/wiki/FVVwwzCX4i44uykK7pRcNHSrnHb) 对MOBA、大逃杀、对称竞技、休闲竞技等品类游戏的节奏和资源进行分析
 
+[[个人对游戏社交系统的分析、思考]](https://kcnhecphx20u.feishu.cn/wiki/S66ZwzIT5ifXLmkON38cccrEnrf?from=from_copylink)
 
 
 **一些尝试和探索：**
