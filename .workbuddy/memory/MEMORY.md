@@ -25,6 +25,8 @@
 - git push 需要代理：git config --global http.proxy http://127.0.0.1:7890
 - **直连 GitHub 注意**：大文件传输（完整 clone 50MB pack / push 大 diff）常遇 `Connection was reset`（GFW 干扰）。可靠做法：① 用浅克隆 `git clone --depth 1` 规避大包；② 或开代理 127.0.0.1:7890；③ push 增量（小 commit）通常能成功，不必重传全量
 - Windows 下被 IDE/资源管理器占用的目录无法 `mv`/`rm` 整目录（busy），但可写入 → 可用 `cp -a` 覆盖内部文件来"替换"仓库内容
+- **正文加载机制**：index.html 用 `fetch('contents/*.md', {cache:'no-store'})` 拉取各板块 Markdown（marked.js 渲染）。`cache:'no-store'` 已加，强制刷新即可看到最新内容；改 .md 后若线上不更新，先确认已 commit+push（GitHub Pages 约 1-2 分钟重建部署）。
+- **cmd 切盘符坑**：Windows cmd 里 `cd "e:\路径"` 不会切换盘符（仍停在 C:），导致后续 git 命令报 `not a git repository`。正确做法：`cd /d "e:\路径"` 或先 `e:` 再 `cd`。
 
 ## GameJam 记录（6条）
 - 第二届 034 GameJam 程序 2026.3
