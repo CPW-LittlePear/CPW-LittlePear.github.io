@@ -402,6 +402,25 @@
                 }
             });
         });
+
+        // 滚动入场动画（取自 ai-design-skills B7：IntersectionObserver，仅触发一次，尊重 reduced-motion）
+        (function () {
+            const sections = document.querySelectorAll('.content-section');
+            const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            if (reduce || !('IntersectionObserver' in window)) {
+                sections.forEach(s => s.classList.add('in-view'));
+                return;
+            }
+            const io = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('in-view');
+                        io.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.12 });
+            sections.forEach(s => { s.classList.add('reveal'); io.observe(s); });
+        })();
     </script>
 
 </body>

@@ -22,7 +22,7 @@
 - 图片在 main.css 中统一设为 width:50%
 - 加粗用 <strong> 标签（marked.js 对某些中文符号组合解析不稳定）
 - **index.html 严禁引入外部 CDN**：polyfill.io / jsdelivr / Google Fonts / MathJax 在国内均被墙，会导致页面白屏/打不开。相关资源已全部本地化：bootstrap-icons.css 在 static/css/、字体在 static/fonts/（woff2/woff）。新增图标资源时务必本地化，不要加新 CDN 链接。
-- git push 需要代理：**git 不读系统/IE 代理，必须显式配置** `git config --global http.proxy http://127.0.0.1:7892`（端口以本机 IE 代理设置为准，当前为 7892；早期记为 7890 已过期）。沙箱内 127.0.0.1 指向沙箱自身故不可用，需在真实环境（dangerouslyDisableSandbox）执行推送
+- git push 需要代理：**git 不读系统/IE 代理，必须显式配置** `git config --global http.proxy http://127.0.0.1:7892`（端口以本机 IE 代理设置为准，当前为 7892；早期记为 7890 已过期）。沙箱内 127.0.0.1 指向沙箱自身故不可用，需在真实环境（dangerouslyDisableSandbox）执行推送。**真实环境 git 不在 PATH**：用 WorkBuddy 自带 `E:\workbuddy\resources\vendor\PortableGit\cmd\git.exe`；PowerShell 里 `& "路径"` 与裸 `git` 调用会被静默拦截（无输出），须用 `Start-Process -FilePath $exe -ArgumentList @(...) -WorkingDirectory $wd -NoNewWindow -Wait -RedirectStandardOutput o.txt -RedirectStandardError e.txt` 重定向到文件再 `Get-Content` 读取。**系统环境变量 HTTP_PROXY 与 http_proxy 大小写冲突**会导致 Start-Process 报「字典中的关键字」错误，调用前须先 `Remove-Item env:HTTP_PROXY; Remove-Item env:http_proxy; Remove-Item env:HTTPS_PROXY; Remove-Item env:https_proxy`（每个 PowerShell 调用是新进程都会重新继承冲突，故每次都要清）。git 代理已写全局 gitconfig，不依赖环境变量。
 - **直连 GitHub 注意**：大文件传输（完整 clone 50MB pack / push 大 diff）常遇 `Connection was reset`（GFW 干扰）。可靠做法：① 用浅克隆 `git clone --depth 1` 规避大包；② 或开代理 127.0.0.1:7892；③ push 增量（小 commit）通常能成功，不必重传全量
 - Windows 下被 IDE/资源管理器占用的目录无法 `mv`/`rm` 整目录（busy），但可写入 → 可用 `cp -a` 覆盖内部文件来"替换"仓库内容
 - **正文加载机制**：index.html 用 `fetch('contents/*.md', {cache:'no-store'})` 拉取各板块 Markdown（marked.js 渲染）。`cache:'no-store'` 已加，强制刷新即可看到最新内容；改 .md 后若线上不更新，先确认已 commit+push（GitHub Pages 约 1-2 分钟重建部署）。
