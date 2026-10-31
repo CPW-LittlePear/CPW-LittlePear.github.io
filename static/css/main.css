@@ -272,40 +272,6 @@ body {
 /* ========== 移动端顶部导航（隐藏） ========== */
 .mobile-topnav { display: none; }
 
-/* ========== Top Section Banner ========== */
-.top-section {
-    position: relative;
-    background-color: var(--color-primary-deep); /* 无图时的兜底底色 */
-    background-position: center;
-    background-size: cover;
-    height: 22rem;
-    display: flex;
-    align-items: flex-end;
-}
-.top-section h2 {
-    font-weight: 600;
-    /* B5：全站唯一允许的渐变——标题文字由白到浅灰横向过渡 */
-    background: linear-gradient(90deg, #ffffff 0%, #dcdcdc 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
-    font-size: clamp(1.35rem, 3.2vw, 1.95rem);
-    white-space: nowrap;
-    text-shadow: 0 2px 14px rgba(0, 0, 0, 0.6);
-}
-.top-section .top-section-content {
-    position: relative;
-    z-index: 1;
-    width: 100%;
-}
-.top-section .top-section-content .container { padding-bottom: var(--space-5); }
-.top-section:before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(20, 30, 20, 0.58);
-}
 
 /* ========== 各章节 ========== */
 .content-section { padding: var(--space-8) 0; }
